@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula GIT</title>
+    <title>Bem-vindo à Aula de GIT</title>
+    <style>
+        :root {
+            --background: #0b132b;
+            --card: #1f4287;
+            --text: #f3f4f6;
+            --accent: #4c66ff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--background) 0%, #1f2a45 100%);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .welcome-card {
+            background: rgba(31, 66, 135, 0.95);
+            background-color: var(--card);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+            max-width: 780px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .welcome-card h1 {
+            font-size: clamp(2.5rem, 4vw, 4rem);
+            margin-bottom: 16px;
+            letter-spacing: 1px;
+        }
+
+        .welcome-card p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 28px;
+            color: #dbeafe;
+        }
+
+        .welcome-card .highlight {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .welcome-card .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 999px;
+            transition: transform 0.2s ease, background 0.2s ease;
+            font-weight: 600;
+        }
+
+        .welcome-card .btn:hover {
+            transform: translateY(-2px);
+            background: #6c84ff;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <main class="welcome-card">
+        <h1>Seja bem-vindo à Aula de GIT!</h1>
+        <p>Esta página é o ponto de partida para aprender os fundamentos do <span class="highlight">Git</span> e do
+            controle de versão. Aqui você encontrará exemplos de commits, branches e como colaborar em projetos.</p>
+        <p>Explore a estrutura do projeto, edite arquivos e pratique suas habilidades em Git diretamente no seu
+            ambiente.</p>
+        <a class="btn" href="#">Começar agora</a>
+    </main>
 </body>
+
 </html>
